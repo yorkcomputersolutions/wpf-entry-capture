@@ -3,7 +3,7 @@
  * Plugin Name:       WPF Entry Capture
  * Plugin URI:        https://yorkcs.com/
  * Description:       Capture form entries from WPForms forms.
- * Version:           1.0
+ * Version:           1.0.1
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            York Computer Solutions LLC

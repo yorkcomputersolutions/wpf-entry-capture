@@ -1,0 +1,43 @@
+/* Customize the table for an individual form entry */
+.wpfec-entry-table {
+    border-collapse: collapse;
+}
+
+.wpfec-entry-table td {
+    padding: 8px;
+    border: 1px solid #888;
+}
+
+.wpfec-print-button {
+    background-image: url(../images/icon-print.svg) !important;
+    background-size: 32px 32px;
+    background-repeat: no-repeat !important;
+    padding-left: 32px !important;
+    margin-bottom: 16px !important;
+}
+
+@media screen and (max-width: 782px) {
+    .wpfec-print-button {
+        padding-left: 42px !important;
+    }
+}
+
+@media print {
+    /* Get rid of the admin sidebar when trying to print an individual form entry */
+    #adminmenuback,
+    #adminmenuwrap,
+    #wpfooter {
+        display: none !important;
+    }
+
+    #wpcontent, #wpfooter {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    /* Hide WPFEC back buttons when trying to print a form entry */
+    .wpfec-back-button,
+    .wpfec-print-button {
+        display: none !important;
+    }
+}
